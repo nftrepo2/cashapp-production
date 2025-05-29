@@ -1,0 +1,88 @@
+.success-container {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #111; /* Dark background */
+}
+
+.success-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--text-color, #fff);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.options-btn {
+  color: var(--text-color, #fff);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.success-icon {
+  font-size: 48px;
+  color: var(--primary-color, #00ddeb);
+  background-color: #222;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.success-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color, #fff);
+  margin-bottom: 10px;
+}
+
+.success-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+}
+
+.success-amount {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary-color, #00ddeb);
+  margin-bottom: 10px;
+}
+
+.success-time {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+}
+
+.success-btn {
+  background-color: var(--primary-color, #00ddeb);
+  color: var(--secondary-color, #000);
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+}
+
+.success-btn:hover {
+  background-color: #00c4d3;
+}

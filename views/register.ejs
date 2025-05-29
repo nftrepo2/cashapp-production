@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Banking App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-form">
+      <h2>Create an Account</h2>
+      <form id="register-form">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" required>
+        </div>
+        <button type="submit" class="btn">Register</button>
+      </form>
+      <div class="auth-switch">
+        <p>Already have an account? <a href="/login">Login</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="account-created" class="account-created">
+    <div class="account-created-content">
+      <h2>Account Created Successfully!</h2>
+      <p>Your account number is:</p>
+      <div id="account-number" class="account-number"></div>
+      <p class="redirect-text">Redirecting to dashboard in <span id="countdown">5</span> seconds...</p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

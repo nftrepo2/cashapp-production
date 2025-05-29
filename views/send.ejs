@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Money - Banking App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/send.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="transfer-container">
+    <div class="transfer-header">
+      <button class="back-btn" id="back-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <h2 class="transfer-title">Send Cash</h2>
+    </div>
+    
+    <div class="amount-display" id="amount-display">$0.00</div>
+    
+    <div class="numpad">
+      <button class="numpad-btn" data-value="1">1</button>
+      <button class="numpad-btn" data-value="2">2</button>
+      <button class="numpad-btn" data-value="3">3</button>
+      <button class="numpad-btn" data-value="4">4</button>
+      <button class="numpad-btn" data-value="5">5</button>
+      <button class="numpad-btn" data-value="6">6</button>
+      <button class="numpad-btn" data-value="7">7</button>
+      <button class="numpad-btn" data-value="8">8</button>
+      <button class="numpad-btn" data-value="9">9</button>
+      <button class="numpad-btn" data-value=".">.</button>
+      <button class="numpad-btn" data-value="0">0</button>
+      <button class="numpad-btn" data-value="backspace">
+        <i class="fas fa-backspace"></i>
+      </button>
+    </div>
+    
+    <button class="transfer-action" id="next-btn">Add</button>
+    
+    <div class="transfer-progress">
+      <span>0:12</span>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <span>0:33</span>
+      <i class="fas fa-volume-up"></i>
+      <i class="fas fa-arrow-down"></i>
+    </div>
+  </div>
+
+  <script src="js/send.js"></script>
+</body>
+</html>

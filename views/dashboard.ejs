@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Banking App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="header">
+      <h1>Money</h1>
+      <div class="profile-pic" id="profile-pic">
+        <img src="img/profile.png" alt="Profile">
+      </div>
+      
+      <!-- Profile dropdown menu -->
+      <div class="profile-dropdown" id="profile-dropdown">
+        <div class="profile-info">
+          <p class="profile-name" id="profile-name">User Name</p>
+          <p class="profile-email" id="profile-email">user@example.com</p>
+        </div>
+        <div class="profile-actions">
+          <a href="/profile" class="profile-action">
+            <i class="fas fa-user"></i> Profile
+          </a>
+          <a href="#" id="logout-btn" class="profile-action logout">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="card balance-card">
+        <div class="balance-label">Cash balance</div>
+        <div class="balance-amount" id="balance-amount">$0.00</div>
+        <div class="account-info">
+          <span id="account-number">Account•0000</span>
+          <span id="routing-number">Routing•000</span>
+        </div>
+        <div class="action-buttons">
+          <button class="action-btn" id="add-money-btn">Add money</button>
+          <button class="action-btn" id="withdraw-btn">Withdraw</button>
+        </div>
+      </div>
+      
+      <div class="card feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-money-bill-transfer"></i>
+        </div>
+        <div class="feature-content">
+          <div class="feature-title">Paychecks</div>
+          <div class="feature-subtitle">Get benefits with direct deposit</div>
+        </div>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      
+      <div class="section-title">Recent Transactions</div>
+      <div class="transactions-list" id="transactions-list">
+        <!-- Transactions will be dynamically inserted here -->
+      </div>
+      
+      <div class="section-title">Explore</div>
+      
+      <div class="feature-grid">
+        <div class="grid-card">
+          <div class="grid-icon savings-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="grid-title">Savings</div>
+          <div class="grid-subtitle">Up to 4% interest</div>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        
+        <div class="grid-card">
+          <div class="grid-icon bitcoin-icon">
+            <i class="fab fa-bitcoin"></i>
+          </div>
+          <div class="grid-title">Bitcoin</div>
+          <div class="grid-subtitle">Learn and invest</div>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        
+        <div class="grid-card">
+          <div class="grid-icon stocks-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="grid-title">Stocks</div>
+          <div class="grid-subtitle"></div>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        
+        <div class="grid-card">
+          <div class="grid-icon taxes-icon">
+            <i class="fas fa-landmark"></i>
+          </div>
+          <div class="grid-title">Taxes</div>
+          <div class="grid-subtitle"></div>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    
+    <div class="nav-bar">
+      <a href="/dashboard" class="nav-item">
+        <span id="balance-short">$0</span>
+      </a>
+      <a href="#" class="nav-item" id="cardsItems">
+        <i class="far fa-credit-card"></i>
+      </a>
+      <a href="/send" class="nav-item money-btn">
+        <div class="money-circle">
+          <i class="fas fa-dollar-sign"></i>
+        </div>
+      </a>
+      <a href="/transactions" class="nav-item">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="/transactions" class="nav-item">
+        <i class="far fa-clock"></i>
+        <span class="notification" id="transaction-count">0</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

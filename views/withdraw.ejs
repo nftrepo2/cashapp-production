@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from cashapp2-production.up.railway.app/withdraw.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 16:00:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Withdraw - Banking App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/withdraw.css">
+  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="withdraw-container">
+    <div class="withdraw-header">
+      <button class="back-btn" id="back-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <h2 class="withdraw-title">Money</h2>
+    </div>
+    
+    <div class="balance-info">
+      <div class="balance-label">Cash Balance</div>
+      <div class="balance-amount" id="balance-amount">$0.00</div>
+      <div class="account-link">Account & Routing <i class="fas fa-chevron-right"></i></div>
+    </div>
+    
+    <div class="withdraw-panel">
+      <div class="withdraw-label">Cash Out</div>
+      <div class="withdraw-available" id="withdraw-available">$0.00 AVAILABLE</div>
+      
+      <div class="withdraw-amount" id="withdraw-amount">$0.00</div>
+      
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="100" class="slider" id="amount-slider">
+      </div>
+      
+      <button class="withdraw-btn" id="withdraw-btn">Cash Out</button>
+    </div>
+  </div>
+
+  <script src="js/withdraw.js"></script>
+</body>
+
+<!-- Mirrored from cashapp2-production.up.railway.app/withdraw.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 16:00:58 GMT -->
+</html>

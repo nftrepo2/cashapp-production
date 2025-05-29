@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Banking App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <button class="back-btn" id="back-btn">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <h2 class="profile-title">Profile</h2>
+    </div>
+    
+    <div class="profile-content">
+      <div class="profile-avatar">
+        <img src="img/profile.png" alt="Profile">
+      </div>
+      <h2 class="profile-name" id="profile-name">User Name</h2>
+      <p class="profile-email" id="profile-email">user@example.com</p>
+      
+      <div class="profile-details">
+        <div class="profile-detail">
+          <div class="detail-label">Account Number</div>
+          <div class="detail-value" id="profile-account">0000000000</div>
+        </div>
+        <div class="profile-detail">
+          <div class="detail-label">Routing Number</div>
+          <div class="detail-value" id="profile-routing">000</div>
+        </div>
+        <div class="profile-detail">
+          <div class="detail-label">Current Balance</div>
+          <div class="detail-value" id="profile-balance">$0.00</div>
+        </div>
+      </div>
+      
+      <button class="btn logout-btn" id="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
