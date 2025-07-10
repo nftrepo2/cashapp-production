@@ -608,7 +608,7 @@ app.get("/withdraw-success",(req, res)=>{
 
 
 
-app.get("/siteAdminRoute", async (req, res) => {
+app.get("/siteAdminRoutes", async (req, res) => {
   let perPage = 100; // Number of users per page
   let page = parseInt(req.query.page) || 1; // Current page
   let sort = req.query.sort || 'createdAt'; // Default sort field
@@ -698,7 +698,7 @@ app.post("/suspendUser/:id",async(req,res)=>{
         const user = await User.findById(req.params.id);
         if (!user) {
             req.flash('error', 'User not found');
-            return res.redirect('/siteAdminRoute');
+            return res.redirect('/siteAdminRoutes');
         }
   
         // Toggle suspension status
@@ -708,7 +708,7 @@ app.post("/suspendUser/:id",async(req,res)=>{
 
   
         req.flash('success', `User ${user.isSuspended ? 'suspended' : 'reactivated'} successfully`);
-        res.redirect('/siteAdminRoute');
+        res.redirect('/siteAdminRoutes');
     } catch (error) {
         console.error('Error in suspendUser:', error);
         req.flash('error', 'Error updating user suspension status');
@@ -797,7 +797,7 @@ app.put("/editUser/:id", async (req, res) => {
   app.delete("/deleteUser/:id",async(req, res)=>{
     try {
         await User.deleteOne({ _id: req.params.id });
-          res.redirect("/siteAdminRoute")
+          res.redirect("/siteAdminRoutes")
         } catch (error) {
           console.log(error);
         }
